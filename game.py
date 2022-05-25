@@ -23,7 +23,7 @@ else:
 
 guess_number = 2
 month_number = randint(1, 12)
-year_number = randint(1924, 2004)
+year_number = randint(1959, 2000)
 
 print("Guess 2:", name, "were you born", 
     month_number, "/", year_number, "?")
@@ -38,7 +38,7 @@ else:
 
 #Guess 3
 month_number = randint(1, 12)
-year_number = randint(1924, 2004)
+year_number = randint(1970, 1999)
 
 print("Guess 3:", name, "were you born", 
     month_number, "/", year_number, "?")
@@ -53,7 +53,7 @@ else:
 
 #Guess 4
 month_number = randint(1, 12)
-year_number = randint(1924, 2004)
+year_number = randint(1980, 2007)
 
 print("Guess 4:", name, "were you born", 
     month_number, "/", year_number, "?")
@@ -68,7 +68,7 @@ else:
 
 #Guess 5
 month_number = randint(1, 12)
-year_number = randint(1924, 2004)
+year_number = randint(1990, 1997)
 
 print("Guess 5:", name, "were you born", 
     month_number, "/", year_number, "?")
