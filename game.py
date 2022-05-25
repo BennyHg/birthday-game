@@ -3,80 +3,21 @@ from random import randint
 
 name = input("Hi! What is your name?")
 
-# Guess 1
-guess_number = 1
-month_number = randint(1, 12)
-year_number = randint(1924, 2004)
 
-print("Guess 1:", name, "were you born", 
-    month_number, "/", year_number, "?")
+for num_guesses in range(6):
+    guess_number = 1
+    month_number = randint(1, 12)
+    year_number = randint(1924, 2004)
 
-response = input("yes or no?")
+    print("Guess: ", name, "were you born", 
+        month_number, "/", year_number, "?")
 
-if response == "yes":
-    print("I knew it!")
-    exit()
-else:
-    print("Drat! Lemme try again!")
+    response = input("yes or no?")
 
-#Guess 2
-
-guess_number = 2
-month_number = randint(1, 12)
-year_number = randint(1959, 2000)
-
-print("Guess 2:", name, "were you born", 
-    month_number, "/", year_number, "?")
-
-response = input("yes or no?")
-
-if response == "yes":
-    print("I knew it!")
-    exit()
-else:
-    print("Drat! Lemme try again!")
-
-#Guess 3
-month_number = randint(1, 12)
-year_number = randint(1970, 1999)
-
-print("Guess 3:", name, "were you born", 
-    month_number, "/", year_number, "?")
-
-response = input("yes or no?")
-
-if response == "yes":
-    print("I knew it!")
-    exit()
-else:
-    print("Drat! Lemme try again!")
-
-#Guess 4
-month_number = randint(1, 12)
-year_number = randint(1980, 2007)
-
-print("Guess 4:", name, "were you born", 
-    month_number, "/", year_number, "?")
-
-response = input("yes or no?")
-
-if response == "yes":
-    print("I knew it!")
-    exit()
-else:
-    print("Drat! Lemme try again!")
-
-#Guess 5
-month_number = randint(1, 12)
-year_number = randint(1990, 1997)
-
-print("Guess 5:", name, "were you born", 
-    month_number, "/", year_number, "?")
-
-response = input("yes or no?")
-
-if response == "yes":
-    print("I knew it!")
-    exit()
-else:
-    print("Drat! Lemme try again!")
+    if response == "yes":
+        print("I knew it!")
+        exit()
+    elif num_guesses == 5:
+        print("I have other things to do. Good bye.")
+    else:
+        print("Drat! Lemme try again!")
